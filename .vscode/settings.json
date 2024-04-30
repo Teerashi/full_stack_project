@@ -1,0 +1,14 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "database": "full_stack_db",
+            "name": "full_stack_db",
+            "password": "626353",
+            "username": "postgres"
+        }
+    ]
+}
