@@ -9,6 +9,12 @@ const {
 module.exports = (sequelize, DataTypes) => {
   class User extends Model {
     static associate(models) {
+      Chat.belongsToMany(models.User, {
+        through: 'ChatToUser',
+        as: 'users',
+        foreignKey: 'userId',
+        otherKey: 'chatId'
+      });
     }
     static async hashPassword(user) {
       if (user.password) {

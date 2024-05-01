@@ -49,7 +49,7 @@ module.exports = {
           len: {
             args: [6], 
             msg: 'Password must be at least 8 characters long'
-          }
+          } 
         }
         
       },
